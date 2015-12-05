@@ -31,5 +31,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "appuser": {
+    "dataSource": "mysql",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "event": {
+    "dataSource": "mysql",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
