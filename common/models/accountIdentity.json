@@ -1,6 +1,6 @@
 {
-  "name": "appuser",
-  "base": "User",
+  "name": "accountIdentity",
+  "base": "UserIdentity",
   "strict": true,
   "idInjection": false,
   "options": {

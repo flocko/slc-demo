@@ -9,6 +9,8 @@
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "express-session": "^1.12.1",
+    "kerberos": "0.0.17",
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
@@ -16,6 +18,10 @@
     "loopback-connector-mongodb": "^1.13.1",
     "loopback-connector-mysql": "^2.2.0",
     "loopback-datasource-juggler": "^2.39.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.1.2",
     "serve-favicon": "^2.0.1"
   },
   "devDependencies": {

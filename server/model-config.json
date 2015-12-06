@@ -1,6 +1,7 @@
 {
   "_meta": {
     "sources": [
+      "../node-modules/loopback-component-passport/lib/models",
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
@@ -32,7 +33,7 @@
     "dataSource": "db",
     "public": false
   },
-  "appuser": {
+  "account": {
     "dataSource": "mysql",
     "public": true,
     "$promise": {},
@@ -40,8 +41,16 @@
   },
   "event": {
     "dataSource": "mysql",
-    "public": true,
+    "public": false,
     "$promise": {},
     "$resolved": true
+  },
+  "accountCredential": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "accountIdentity": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
