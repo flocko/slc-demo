@@ -13,5 +13,15 @@
     "connector": "mysql",
     "user": "admin",
     "createDatabase": true
+  },
+  "mongodb": {
+    "port": 61374,
+    "url": "mongodb://funcourt:admin@ds061374.mongolab.com:61374/funcourt",
+    "database": "funcourt",
+    "password": "admin",
+    "name": "mongodb",
+    "connector": "mongodb",
+    "user": "funcourt",
+    "createDatabase": true
   }
 }
