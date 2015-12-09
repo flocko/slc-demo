@@ -4,7 +4,7 @@ deploy:
   user: flo.kircher@gmail.com
   password:
     secure: N+qJOwYn0e406Ck58Sg9GQgxNq6uMph/BQVf2iMyPIV5SlD/h8acKpiUM3bZt6v1uqfEIfAKkEzEOtGTiFHZSOtTYznYxNBjriCDnTQSgK9TJ+xsTGTq6Lp337ShZ2jSWi4rbbsNj10/WIrveo0pIdOewzdfpaxI/SPfLV8lX3vhe5s0RYip4Oi9EPak8yJKJlMualKSi26b3TxzqIdeMNLzAB+BioFcaerrN1lOhXCcryUPPEIVaCJR5If8G1uzfSoS3jpediThTBwbJ0ElsIKBNME6fS5dECLBj9sooga/5qvDWddInXIp34EVdDVtl94ynCk0z5nCF9Pf4WPksDpb8v7Xo1IS096cYYzg/5SOAZaOaCIJxq/BSY97Mb8U/+e/0zIuB6avcVnqOC9TePr9MUs1SGO3guAFnZIH1EVK6ho8awHJwMoa0wVekqdw4+UtFY+wix2jPkmEFj5jpXACWsGpRrOZcemQZWkAmp2GAH7hbWcpLK9xeuiRdIICVsH3qGXo5bIJgSeeOGqPGL0ZwHI1LdYFjbDZsmcnR3KC2em/T3TR8CQFP9Y4Pv1EX1QPXKjIXyfGxmtt7cSic1bM5LhlLXuPOeVg0VkC84UJFohyT2fpiCkjECkbhFzexDaZhUKX7U04l+cKjTZFyrj+Km9y2KpfLlxXo5sdRHc=
-  app: slc-demo
-  domain: loopdemo-flocko.rhcloud.com
+  app: loopdemo
+  domain: flocko
   on:
     repo: flocko/slc-demo
