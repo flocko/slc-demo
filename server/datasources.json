@@ -1,12 +1,12 @@
 {
   "mongodb": {
-    "port": "$OPENSHIFT_MONGODB_DB_PORT",
-    "url": "mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/",
+    "port": 61374,
+    "url": "mongodb://funcourt:admin@ds061374.mongolab.com:61374/funcourt",
     "database": "funcourt",
-    "password": "$OPENSHIFT_MONGODB_DB_PASSWORD",
+    "password": "admin",
     "name": "mongodb",
     "connector": "mongodb",
-    "user": "$OPENSHIFT_MONGODB_DB_USERNAME",
+    "user": "funcourt",
     "createDatabase": true
   }
 }
