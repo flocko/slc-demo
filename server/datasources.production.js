@@ -5,10 +5,11 @@ var mongoUser = process.env.OPENSHIFT_MONGODB_DB_USERNAME;
 
 module.exports = {
   mongodb: {
-    url: 'mongodb://' + mongoHost + ':' + mongoPort,
+    host: mongoHost,
     port: mongoPort,
     database: 'funcourt',
     user: mongoUser,
-    password: mongoPass
+    password: mongoPass,
+    createDatabase: true
   }
 };
