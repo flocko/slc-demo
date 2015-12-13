@@ -8,36 +8,7 @@ var loopbackPassport = require('loopback-component-passport');
 var PassportConfigurator = loopbackPassport.PassportConfigurator;
 var passportConfigurator = new PassportConfigurator(app);
 
-// load provider configuration
-var config = {};
-try {
-  config = require('../providers.json');
-} catch(err) {
-  console.trace(err);
-  process.exit(1);
-}
-
-// enable http session
-app.use(loopback.session({ secret: 'say what'}));
-
 app.start = function() {
-  // pasport init
-  passportConfigurator.init();
-
-  // set up related models
-  passportConfigurator.setupModels({
-    userModel: app.models.account,
-    userIdentityModel: app.models.accountIdentity,
-    userCredentialModel: app.models.accountCredential
-  });
-
-  // configure passport for 3rd party
-  for(var s in config) {
-    var c = config[s];
-    c.session = c.session !== false;
-    passportConfigurator.configureProvider(s, c);
-  }
-
   // start the web server
   return app.listen(function() {
     app.emit('started');
@@ -59,3 +30,36 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+
+// enable http session
+app.use(loopback.session({
+  secret: 'say what',
+  resave: true,
+  saveUninitialized: true
+}));
+
+// load provider configuration
+var config = {};
+try {
+  config = require('../providers.json');
+} catch(err) {
+  console.trace(err);
+  process.exit(1);
+}
+
+// pasport init
+passportConfigurator.init();
+
+// set up related models
+passportConfigurator.setupModels({
+  userModel: app.models.account,
+  userIdentityModel: app.models.accountIdentity,
+  userCredentialModel: app.models.accountCredential
+});
+
+// configure passport for 3rd party
+for(var s in config) {
+  var c = config[s];
+  c.session = c.session !== false;
+  passportConfigurator.configureProvider(s, c);
+}

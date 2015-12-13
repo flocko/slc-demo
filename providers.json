@@ -21,5 +21,30 @@
     "successRedirect": "/link/account",
     "scope": ["email", "profile"],
     "link": true
-  }
+  },
+  "google-login": {
+    "provider": "google",
+    "module": "passport-google-oauth",
+    "strategy": "OAuth2Strategy",
+    "clientID": "3439427053-ur9jabifoko0jo7vp8cct8c2lfh86h8q.apps.googleusercontent.com",
+    "clientSecret": "FrPsm8T9wdL9lwoJMt67k1Yc",
+    "callbackURL": "/auth/google/callback",
+    "authPath": "/auth/google",
+    "callbackPath": "/auth/google/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email", "profile"],
+    "failureFlash": true
+  },
+   "facebook-login": {
+     "provider": "facebook",
+     "module": "passport-facebook",
+     "clientID": "1063626693689824",
+     "clientSecret": "a58b937c48dcb421753c6d5d386db664",
+     "callbackURL": "/auth/facebook/callback",
+     "authPath": "/auth/facebook",
+     "callbackPath": "/auth/facebook/callback",
+     "successRedirect": "/auth/account",
+     "scope": ["email"]
+   }
 }
