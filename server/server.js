@@ -47,7 +47,12 @@ try {
   process.exit(1);
 }
 
-// pasport init
+// The access token is only available after boot
+app.middleware('auth', loopback.token({
+  model: app.models.AccessToken
+}));
+
+// passport init
 passportConfigurator.init();
 
 // set up related models

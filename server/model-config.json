@@ -52,5 +52,9 @@
   "accountIdentity": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "accessToken": {
+    "dataSource": "mongodb",
+    "public": false
   }
 }
