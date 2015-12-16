@@ -7,7 +7,7 @@ module.exports = {
   mongodb: {
     host: mongoHost,
     port: mongoPort,
-    database: 'funcourt',
+    database: "funcourt",
     user: mongoUser,
     password: mongoPass,
     createDatabase: true
