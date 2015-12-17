@@ -3,5 +3,5 @@ module.exports = function(Account) {
   Account.settings.acls.length = 0;
 
   // overwrite built in configuration
-  Account.settings.acls = require("./accountacl.json");
+  Account.settings.acls = require('./accountacl.json');
 };
