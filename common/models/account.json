@@ -1,26 +1,16 @@
 {
-  "name": "account",
+  "name": "Account",
+  "plural": "Accounts",
   "base": "User",
-  "strict": true,
-  "idInjection": false,
+  "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "accessTokens": {
-      "type": "hasMany",
-      "model": "accessToken",
-      "foreignKey": "userId"
-    },
-    "identities": {
-      "type": "hasMany",
-      "model": "accountIdentity",
-      "foreignKey": "userId"
-    },
-    "credentials": {
-      "type": "hasMany",
-      "model": "accountCredential",
-      "foreignKey": "userId"
+    "details": {
+      "type": [
+        "object"
+      ]
     }
   },
   "validations": [],

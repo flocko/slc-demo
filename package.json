@@ -1,6 +1,6 @@
 {
   "name": "funcourt",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
@@ -14,15 +14,8 @@
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
-    "loopback-component-passport": "^1.6.0",
-    "loopback-connector-mongodb": "^1.13.1",
-    "loopback-connector-mysql": "^2.2.0",
+    "loopback-connector-mongodb": "^1.13.2",
     "loopback-datasource-juggler": "^2.39.0",
-    "passport": "^0.3.2",
-    "passport-facebook": "^2.0.0",
-    "passport-google-oauth": "^0.2.0",
-    "passport-local": "^1.0.0",
-    "passport-oauth2": "^1.1.2",
     "serve-favicon": "^2.0.1"
   },
   "devDependencies": {
