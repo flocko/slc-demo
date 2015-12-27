@@ -32,7 +32,11 @@
     "dataSource": "mongodb",
     "public": false
   },
-  "Account": {
+  "Game": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Player": {
     "dataSource": "mongodb",
     "public": true
   }
