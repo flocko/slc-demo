@@ -1,7 +1,11 @@
 {
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
   "mongodb": {
-    "port": 61374,
     "host": "ds061374.mongolab.com",
+    "port": 61374,
     "database": "funcourt",
     "password": "admin",
     "name": "mongodb",
